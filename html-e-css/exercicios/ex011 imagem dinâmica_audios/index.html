@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture> 
+    
+    <!--lembrando que é necessário fazer nessa ordem: em baixo a maior imagem, logo acima o source-media-type da imagem media e em cima a imagem menor e assim sucessivamente. recurso muito usado para melhorar imagens em dispositivos diferentes.-->
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/spanish-moss.mp3" controls></audio>
+    <!--MP3 WAV OGG formatos de arquivo de audio-->
+
+    <!--essa forma de apenas digitar "audio" e dar enter é meio limitada. tem uma forma mais completa usando <audio> src-type, que voce pode carregar o arquivo nos diversos formatos ao mesmo tempo. ele carrega do primeiro, e se não consegue carrega o proximo, até conseguir.-->
+
+    <audio preload="metadata" controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a>.</p>
+    </audio>
+
+    <!--parametro preload=auto ou nada quer dizer que precisa carregar todo arquivo para o sirte se considerar carregado, não recomendavel. preload=metadata carrega apenas algumas informações como tempo etc, recomendada. preload=none não carregada nada-->
+    <!--controls para aparecer os controles do audio-->
+    <!--loop para o audio ficar se repetindo-->
+    
+
+</body>
+</html>

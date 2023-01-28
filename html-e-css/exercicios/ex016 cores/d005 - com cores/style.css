@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    background-image: linear-gradient(to top, #46AE9F, #007A8A);
+    background-attachment: fixed;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px; /* achatar a ponta do "quadrado" */
+    box-shadow: 5px 5px 15px #014750c9; /* sombra no item. */
+    /* primeiro número é o valor da sobra pra direita, segundo é para baixo, terceiro é o quanto a sombra vai se espalhar, e depois a cor */
+    width: 800px; /* tamanho */
+    padding: 10px; /*margem do texto até a borda do item */
+    margin: auto; /*margem o item com a página */
+}
+
+h1 {
+    color: #0D2E41;
+    text-align: center;
+}
+
+h2 {
+    color: #FB6137;
+}
+
+p {
+    text-align: justify;
+}
