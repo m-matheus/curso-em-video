@@ -59,6 +59,10 @@ section {
    font-size: 3.8vw;
 }
 
+#img01, #img02 {
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.384);
+}
+
 #img01 {
     background: var(--cor0) url(../imagens/background001.jpg) no-repeat fixed center right;
     background-size: cover;
